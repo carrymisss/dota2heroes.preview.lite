@@ -1,0 +1,37 @@
+{
+  "name": "dota2heroes.preview",
+  "version": "0.0.1",
+  "description": "pet-priject",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "client": "npm run start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/carrymisss/dota2heroes.preview.git"
+  },
+  "keywords": [
+    "dota2",
+    "heroes",
+    "react",
+    "express"
+  ],
+  "author": "carrymiss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carrymisss/dota2heroes.preview/issues"
+  },
+  "homepage": "https://github.com/carrymisss/dota2heroes.preview#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "cheerio": "^1.0.0-rc.3",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.6"
+  }
+}
