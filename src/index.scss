@@ -17,6 +17,18 @@
 .hero-card {
 	// max-width: 180px;
 	transition: 250ms;
+	height: 70px;
+	overflow: hidden;
+	& video {
+		transform: scale(1.4);
+	}
+	&:hover {
+		transform: scale(1.7);
+		z-index: 1111;
+	}
+	&>.ant-card-cover {
+		height: 100%;
+	}
 	& .card-title {
 		text-align: center;
 		white-space: nowrap;
@@ -66,8 +78,8 @@
 }
 
 .table-cover-img {
-	border-radius: 4px;
-	box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, .1);
+	border-radius: 4px !important;
+	box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, .3);
 }
 
 .ant-tabs-tab {
@@ -307,7 +319,7 @@ h1, h2, h3, h4, h5, h6 {
 			padding: 15px 24px 0;
 		}
 		&-img {
-			width: 100%;
+			// width: 100%;
 			height: 100%;
 		}
 		&-gif {

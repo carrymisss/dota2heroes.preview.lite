@@ -15,21 +15,21 @@ const Complexity = ({ level }) => {
 	if (level === 1) {
 		forRender =
 			<>
-			<Tooltip placement="bottomLeft" title="Способности этого героя достаточно простые.">
+			<Tooltip placement="bottomLeft" title="The abilities of this hero are quite simple.">
 				<div style={{ display: "inline-flex", alignItems: "center" }}><DiamondFill />&nbsp;<Diamond />&nbsp;<Diamond /></div>
 			</Tooltip>
 			</>
 	} else if (level === 2) {
 		forRender =
 			<>
-			<Tooltip placement="bottomLeft" title="Способности этого героя требуют умеренного уровня координации, реакции и игры в целом.">
+			<Tooltip placement="bottomLeft" title="This hero's abilities require a moderate level of coordination, reaction and general play.">
 				<div style={{ display: "inline-flex", alignItems: "center" }}><DiamondFill />&nbsp;<DiamondFill />&nbsp;<Diamond /></div>
 			</Tooltip>
 			</>
 	} else {
 		forRender =
 			<>
-			<Tooltip placement="bottomLeft" title="Способности этого героя требуют високого уровня координации, реакции и игры в целом.">
+			<Tooltip placement="bottomLeft" title="The abilities of this hero require a high level of coordination, reaction and play in general.">
 				<div style={{ display: "inline-flex", alignItems: "center" }}><DiamondFill />&nbsp;<DiamondFill />&nbsp;<DiamondFill /></div>
 			</Tooltip>
 			</>
@@ -86,7 +86,7 @@ const HeroPage = ({ heroes, isReady }) => {
 						<Col span={24}>
 							<PageHeader
 							onBack={() => history.push('/')}
-							title='Hero information'
+							title='Back to all heroes'
 							subTitle={null}
 							backIcon={<ArrowLeftSquare size={40} />}
 							/>

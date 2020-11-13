@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
+// import { bindActionCreators } from 'redux'
 // import * as heroesActions from '../actions/heroes'
 import HeroCard from '../components/HeroCard'
 

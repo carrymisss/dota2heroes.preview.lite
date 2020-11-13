@@ -3,13 +3,11 @@ import HeroCard from '../containers/HeroCard'
 import FilterButtons from '../containers/FilterButtons'
 import { Scrollbars } from 'react-custom-scrollbars'
 import { Row, Col, Divider } from 'antd'
-import axios from 'axios'
-import Overdrive from 'react-overdrive'
 
 
 const HeroesPins = ({ heroes, isReady }) => {
-	document.getElementById('favicon').href = "/favicon.ico"
-	document.getElementsByTagName('title')[0].innerHTML = "All heroes"
+	document.getElementById('favicon').href = "/favicon.png"
+	document.getElementsByTagName('title')[0].innerHTML = "Dota 2 heroes"
 
 	return (
 		<>
@@ -37,7 +35,7 @@ const HeroesPins = ({ heroes, isReady }) => {
 					<Row justify="start" gutter={[6, 6]}>
 						{ heroes.map((hero) => (
 							(hero.attribute === 'strength') &&
-							<Col key={hero.name} span={2}>
+							<Col key={hero.name} span={1}>
 								<HeroCard hero={hero} />
 							</Col>
 						))}
@@ -55,7 +53,7 @@ const HeroesPins = ({ heroes, isReady }) => {
 					<Row justify="start" gutter={[6, 6]}>
 						{ heroes.map((hero) => (
 							(hero.attribute === 'agility') &&
-							<Col key={hero.name} span={2}>
+							<Col key={hero.name} span={1}>
 								<HeroCard hero={hero} />
 							</Col>
 						))}
@@ -73,7 +71,7 @@ const HeroesPins = ({ heroes, isReady }) => {
 					<Row justify="start" gutter={[6, 6]}>
 						{ heroes.map((hero) => (
 							(hero.attribute === 'intelligence') &&
-							<Col key={hero.name} span={2}>
+							<Col key={hero.name} span={1}>
 								<HeroCard hero={hero} />
 							</Col>
 						))}
