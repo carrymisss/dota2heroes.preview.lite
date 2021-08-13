@@ -1,4 +1,4 @@
-Created on **React+AntD/Express**
+Created on **React+Ant Design**
 
 **Lite version**
 
